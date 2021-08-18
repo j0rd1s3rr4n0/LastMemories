@@ -147,9 +147,10 @@ def Testing():
 						#print(newstringName,'//',newstringPackage,'//',newstringVersion)
 						# Installing
 						if newstringName != '':
+							print(newstringName)
 							installstring = ('cmd /c winget install "%s"' % newstringName)
 							#	#os.system(installstring)
-							print(installstring)
+							#print(installstring)
 						s+=1
 					cnt+=1
 						
