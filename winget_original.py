@@ -5,7 +5,7 @@
 # 2 - winget source update
 # 3 - winget upgrade
 
- comando "winget search" deimitador espacio 3 columnas generales de las cuales las 2 ultimas no
+comando "winget search" deimitador espacio 3 columnas generales de las cuales las 2 ultimas no
 varian pero la primera puede generar infinitas tablas
 
 Es decir para cojer el nombre principal se usara [0:(len(linea)-2)]
@@ -118,7 +118,7 @@ def Testing():
 				if fake_line != line:
 					cnt = 1
 					while line:
-						print("{}".format(line.strip()))
+						#print("{}".format(line.strip()))
 						fake_line = line
 						a = line
 						line = fp.readline()
@@ -129,6 +129,7 @@ def Testing():
 						if '--' in a:
 							a.remove('--')
 						#a.pop(0)
+						#print(a)
 						s = 0						
 						new = []
 						for elements in a:
@@ -137,19 +138,23 @@ def Testing():
 									#print('#')
 									#print(a)
 									rdr = str(a[s])
+									#if 'cmd' in rdr:
+										#rdr.remove('cmd')	
 									new.append(rdr)
+									print(rdr)
 									#new.pop(0)
 									#print('$')
+									#print(line)
 									#print(len(new))
-						newstringName = ''.join(map(str,new[0:]))
+						newstringName = ''.join(map(str,new[0:1]))
 						newstringPackage = ''.join(map(str,new[(len(new)-3):(len(new)-2)]))
 						newstringVersion = ''.join(map(str,new[(len(new)-2):len(new)-1]))
 						#print(newstringName,'//',newstringPackage,'//',newstringVersion)
 						# Installing
 						if newstringName != '':
-							print(newstringName)
+							#print(newstringName)
 							installstring = ('cmd /c winget install "%s"' % newstringName)
-							#	#os.system(installstring)
+							# os.system(installstring)
 							#print(installstring)
 						s+=1
 					cnt+=1
@@ -157,7 +162,7 @@ def Testing():
 
 			fp.close()
 		runing = False
-	a =[]
+	a = []
 def main():
 	Testing()
 
