@@ -99,8 +99,8 @@ def Testing():
 		s+=1
 	#new.pop(0)
 	newstring = ' '.join(map(str,new[0:(len(new)-2)]))
-	newstringPackage = ' '.join(map(str,new[(len(new)-4):(len(new)-2)]))
-	newstringVersion = ' '.join(map(str,new[(len(new)-3):len(new)]))
+	newstringPackage = ' '.join(map(str,new[(len(new)-2):(len(new)-1)]))
+	newstringVersion = ' '.join(map(str,new[(len(new)-1):len(new)]))
 	print(newstring,'\n',newstringPackage,'\n',newstringVersion)
 
 	# Installing

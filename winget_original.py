@@ -80,50 +80,56 @@ AnyDesk                                AnyDeskSoftwareGmbH.AnyDesk        ad 6.3
 AnyDesk MSI                            AnyDeskSoftwareGmbH.AnyDeskMSI     6.3.2
 7-Zip                                  7zip.7zip                          19.00.00.0
 """
+
 import os
 import time
 import getpass
+import pandas as pd
+
 def Testing():
 	# Extract Packages
 	archivo = '%TEMP%\\paquetes.tmp'
-	#os.system('winget search > '+archivo)
+	print('Este proceso puede tardar 2 min aprox ...')
+	os.system('cmd /c winget search > '+archivo)
 	systemuser = getpass.getuser()
+	time.sleep(90)
 	ruta = "C:\\Users\\"+str(systemuser)+"\\AppData\\Local\\Temp\\paquetes.tmp"
 	f = open(ruta,"r",encoding="utf8")
 	a =[]
 	for linea in f:
-		print(linea)
-		try:
-			time.sleep(0.1)
-			a.append(linea)
-			a = str(linea)
-			# Extract Program Name
-			a = a.split(" ")
-			s = 0
-			new = []
-			for elements in a:
-				while elements != '':
+		a.append(linea)
+		a = str(linea)
+		# Extract Program Name
+		a = a.split(" ")
+		a = list(pd.unique(a))
+		if '--' in a:
+			print(a.remove('--'))
+		#a.pop(0)
+
+		s = 0
+		new = []
+		for elements in a:
+			if len(elements) > 3:
+				if elements != '':
+					print('#')
+
+					print(a)
 					rdr = str(a[s])
-					if len(rdr) >=1:
-						new.append(rdr)
-						#new.pop(0)
-						newstraingName = ' '.join(map(str,new[0:(len(new)-2)]))
-						#newstringPackage = ' '.join(map(str,new[(len(new)-4):(len(new)-2)]))
-						#newstringVersion = ' '.join(map(str,new[(len(new)-3):len(new)]))
-						if newstringName != '':
-							print('$ ',newstringName)
+					new.append(rdr)
+					#new.pop(0)
+					#print('$')
+					print(len(new))
+					newstringName = 'dia'.join(map(str,new[0:]))
+					newstringPackage = 'dia'.join(map(str,new[(len(new)-3):(len(new)-2)]))
+					newstringVersion = 'dia'.join(map(str,new[(len(new)-2):len(new)-1]))
+					#print(newstringName,'//',newstringPackage,'//',newstringVersion)
+					# Installing
+					if newstringName == " ":
+						installstring = ('cmd /c winget install "%s"' % newstringName)
+						#	#os.system(installstring)
+						print(installstring)
 					s+=1
 					
-					# Installing
-					if newstringName != "":
-						installstring = ('cmd /c winget install "%s" ' % newstringName)
-						#os.system(installstring)
-						#print(installstring)
-						newstringName = ''
-						rdr = ''
-		except:
-			newstringName = ''
-			rdr = ''
 	f.close()
 def main():
 	Testing()
