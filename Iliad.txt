@@ -1,0 +1,256 @@
+" ASDASDASDA " 
+" weawe " 
+"weawe " 
+"weawe" 
+"weae" 
+"eae" 
+"ae" 
+Listado de rutas de carpetas para el volumen OS
+El n£mero de serie del volumen es E296-6A83
+C:.
+No existe ninguna subcarpeta 
+
+Listado de rutas de carpetas para el volumen OS
+El n£mero de serie del volumen es 00000096 E296:6A83
+C:\USERS\ADMIN\DOCUMENTS
+ÃÄÄÄAdobe
+ÃÄÄÄGitHub
+³   ÃÄÄÄLastMemories
+³   ÃÄÄÄNeWare
+³   ³   ÃÄÄÄTools
+³   ³   ÀÄÄÄWebsite
+³   ³       ÃÄÄÄcss
+³   ³       ÃÄÄÄimg
+³   ³       ÀÄÄÄvid
+³   ÃÄÄÄTSTK
+³   ³   ÀÄÄÄMicrosystemsPC GUI
+³   ³       ÀÄÄÄWindowsApp1
+³   ³           ÃÄÄÄbin
+³   ³           ³   ÃÄÄÄDebug
+³   ³           ³   ³   ÀÄÄÄMicrosystemsPC
+³   ³           ³   ÀÄÄÄRelease
+³   ³           ÃÄÄÄMy Project
+³   ³           ÃÄÄÄobj
+³   ³           ³   ÀÄÄÄDebug
+³   ³           ³       ÀÄÄÄTempPE
+³   ³           ÀÄÄÄResources
+³   ÀÄÄÄWindowsSysAdmin
+³       ÃÄÄÄBackDoor
+³       ÃÄÄÄDisable WinDef
+³       ÃÄÄÄEnable WinDef
+³       ÃÄÄÄReset Passwords
+³       ³   ÃÄÄÄCutre
+³       ³   ÀÄÄÄntpwed07
+³       ÃÄÄÄReset Permisos
+³       ÀÄÄÄUtilities
+ÃÄÄÄMonitoreo
+ÃÄÄÄMy Games
+³   ÃÄÄÄRainbow Six - Siege
+³   ³   ÀÄÄÄ169d59f2-70ea-46d0-8df6-98221529306f
+³   ÀÄÄÄRocket League
+³       ÃÄÄÄBinaries
+³       ³   ÀÄÄÄWin64
+³       ÀÄÄÄTAGame
+³           ÃÄÄÄCache
+³           ³   ÀÄÄÄWebCache
+³           ÃÄÄÄConfig
+³           ÃÄÄÄDemos
+³           ÃÄÄÄLogs
+³           ÀÄÄÄSaveData
+³               ÀÄÄÄDBE_Production
+ÃÄÄÄTor
+³   ÀÄÄÄTor Browser
+³       ÀÄÄÄBrowser
+³           ÃÄÄÄbrowser
+³           ³   ÃÄÄÄfeatures
+³           ³   ÀÄÄÄVisualElements
+³           ÃÄÄÄdefaults
+³           ³   ÀÄÄÄpref
+³           ÃÄÄÄfonts
+³           ÀÄÄÄTorBrowser
+³               ÃÄÄÄData
+³               ³   ÃÄÄÄBrowser
+³               ³   ³   ÃÄÄÄCaches
+³               ³   ³   ³   ÀÄÄÄprofile.default
+³               ³   ³   ³       ÃÄÄÄcache2
+³               ³   ³   ³       ³   ÃÄÄÄdoomed
+³               ³   ³   ³       ³   ÀÄÄÄentries
+³               ³   ³   ³       ÀÄÄÄstartupCache
+³               ³   ³   ÃÄÄÄMozilla
+³               ³   ³   ³   ÃÄÄÄExtensions
+³               ³   ³   ³   ÀÄÄÄSystemExtensionsDev
+³               ³   ³   ÀÄÄÄprofile.default
+³               ³   ³       ÃÄÄÄbrowser-extension-data
+³               ³   ³       ³   ÀÄÄÄ{73a6fe31-595d-460b-a920-fcc0f8843232}
+³               ³   ³       ÃÄÄÄextensions
+³               ³   ³       ÀÄÄÄstorage
+³               ³   ³           ÀÄÄÄpermanent
+³               ³   ³               ÀÄÄÄchrome
+³               ³   ³                   ÀÄÄÄidb
+³               ³   ³                       ÃÄÄÄ1451318868ntouromlalnodry--epcr.files
+³               ³   ³                       ÀÄÄÄ3870112724rsegmnoittet-es.files
+³               ³   ÀÄÄÄTor
+³               ³       ÃÄÄÄkeys
+³               ³       ÀÄÄÄonion-auth
+³               ÃÄÄÄDocs
+³               ³   ÀÄÄÄLicenses
+³               ³       ÀÄÄÄPluggableTransports
+³               ÀÄÄÄTor
+³                   ÀÄÄÄPluggableTransports
+ÃÄÄÄVisual Studio 2019
+³   ÃÄÄÄCode Snippets
+³   ³   ÃÄÄÄJavaScript
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄTypeScript
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄVisual Basic
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄVisual C#
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄVisual Web Developer
+³   ³   ³   ÃÄÄÄMy CSS Snippets
+³   ³   ³   ÀÄÄÄMy HTML Snippets
+³   ³   ÃÄÄÄXAML
+³   ³   ³   ÀÄÄÄMy XAML Snippets
+³   ³   ÀÄÄÄXML
+³   ³       ÀÄÄÄMy Xml Snippets
+³   ÀÄÄÄTemplates
+³       ÃÄÄÄItemTemplates
+³       ³   ÃÄÄÄExtensibilidad
+³       ³   ÃÄÄÄJavaScript
+³       ³   ÃÄÄÄTypeScript
+³       ³   ÃÄÄÄVisual Basic
+³       ³   ÃÄÄÄVisual C#
+³       ³   ÀÄÄÄVisual Web Developer
+³       ÀÄÄÄProjectTemplates
+³           ÃÄÄÄExtensibilidad
+³           ÃÄÄÄJavaScript
+³           ÃÄÄÄTypeScript
+³           ÃÄÄÄVisual Basic
+³           ÃÄÄÄVisual C#
+³           ÀÄÄÄVisual Web Developer
+ÀÄÄÄWindowsPowerShell
+    ÀÄÄÄScripts
+        ÀÄÄÄInstalledScriptInfos
+Listado de rutas de carpetas para el volumen OS
+El n£mero de serie del volumen es 000000F5 E296:6A83
+C:\USERS\ADMIN\DOCUMENTS
+ÃÄÄÄAdobe
+ÃÄÄÄGitHub
+³   ÃÄÄÄLastMemories
+³   ÃÄÄÄNeWare
+³   ³   ÃÄÄÄTools
+³   ³   ÀÄÄÄWebsite
+³   ³       ÃÄÄÄcss
+³   ³       ÃÄÄÄimg
+³   ³       ÀÄÄÄvid
+³   ÃÄÄÄTSTK
+³   ³   ÀÄÄÄMicrosystemsPC GUI
+³   ³       ÀÄÄÄWindowsApp1
+³   ³           ÃÄÄÄbin
+³   ³           ³   ÃÄÄÄDebug
+³   ³           ³   ³   ÀÄÄÄMicrosystemsPC
+³   ³           ³   ÀÄÄÄRelease
+³   ³           ÃÄÄÄMy Project
+³   ³           ÃÄÄÄobj
+³   ³           ³   ÀÄÄÄDebug
+³   ³           ³       ÀÄÄÄTempPE
+³   ³           ÀÄÄÄResources
+³   ÀÄÄÄWindowsSysAdmin
+³       ÃÄÄÄBackDoor
+³       ÃÄÄÄDisable WinDef
+³       ÃÄÄÄEnable WinDef
+³       ÃÄÄÄReset Passwords
+³       ³   ÃÄÄÄCutre
+³       ³   ÀÄÄÄntpwed07
+³       ÃÄÄÄReset Permisos
+³       ÀÄÄÄUtilities
+ÃÄÄÄMonitoreo
+ÃÄÄÄMy Games
+³   ÃÄÄÄRainbow Six - Siege
+³   ³   ÀÄÄÄ169d59f2-70ea-46d0-8df6-98221529306f
+³   ÀÄÄÄRocket League
+³       ÃÄÄÄBinaries
+³       ³   ÀÄÄÄWin64
+³       ÀÄÄÄTAGame
+³           ÃÄÄÄCache
+³           ³   ÀÄÄÄWebCache
+³           ÃÄÄÄConfig
+³           ÃÄÄÄDemos
+³           ÃÄÄÄLogs
+³           ÀÄÄÄSaveData
+³               ÀÄÄÄDBE_Production
+ÃÄÄÄTor
+³   ÀÄÄÄTor Browser
+³       ÀÄÄÄBrowser
+³           ÃÄÄÄbrowser
+³           ³   ÃÄÄÄfeatures
+³           ³   ÀÄÄÄVisualElements
+³           ÃÄÄÄdefaults
+³           ³   ÀÄÄÄpref
+³           ÃÄÄÄfonts
+³           ÀÄÄÄTorBrowser
+³               ÃÄÄÄData
+³               ³   ÃÄÄÄBrowser
+³               ³   ³   ÃÄÄÄCaches
+³               ³   ³   ³   ÀÄÄÄprofile.default
+³               ³   ³   ³       ÃÄÄÄcache2
+³               ³   ³   ³       ³   ÃÄÄÄdoomed
+³               ³   ³   ³       ³   ÀÄÄÄentries
+³               ³   ³   ³       ÀÄÄÄstartupCache
+³               ³   ³   ÃÄÄÄMozilla
+³               ³   ³   ³   ÃÄÄÄExtensions
+³               ³   ³   ³   ÀÄÄÄSystemExtensionsDev
+³               ³   ³   ÀÄÄÄprofile.default
+³               ³   ³       ÃÄÄÄbrowser-extension-data
+³               ³   ³       ³   ÀÄÄÄ{73a6fe31-595d-460b-a920-fcc0f8843232}
+³               ³   ³       ÃÄÄÄextensions
+³               ³   ³       ÀÄÄÄstorage
+³               ³   ³           ÀÄÄÄpermanent
+³               ³   ³               ÀÄÄÄchrome
+³               ³   ³                   ÀÄÄÄidb
+³               ³   ³                       ÃÄÄÄ1451318868ntouromlalnodry--epcr.files
+³               ³   ³                       ÀÄÄÄ3870112724rsegmnoittet-es.files
+³               ³   ÀÄÄÄTor
+³               ³       ÃÄÄÄkeys
+³               ³       ÀÄÄÄonion-auth
+³               ÃÄÄÄDocs
+³               ³   ÀÄÄÄLicenses
+³               ³       ÀÄÄÄPluggableTransports
+³               ÀÄÄÄTor
+³                   ÀÄÄÄPluggableTransports
+ÃÄÄÄVisual Studio 2019
+³   ÃÄÄÄCode Snippets
+³   ³   ÃÄÄÄJavaScript
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄTypeScript
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄVisual Basic
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄVisual C#
+³   ³   ³   ÀÄÄÄMy Code Snippets
+³   ³   ÃÄÄÄVisual Web Developer
+³   ³   ³   ÃÄÄÄMy CSS Snippets
+³   ³   ³   ÀÄÄÄMy HTML Snippets
+³   ³   ÃÄÄÄXAML
+³   ³   ³   ÀÄÄÄMy XAML Snippets
+³   ³   ÀÄÄÄXML
+³   ³       ÀÄÄÄMy Xml Snippets
+³   ÀÄÄÄTemplates
+³       ÃÄÄÄItemTemplates
+³       ³   ÃÄÄÄExtensibilidad
+³       ³   ÃÄÄÄJavaScript
+³       ³   ÃÄÄÄTypeScript
+³       ³   ÃÄÄÄVisual Basic
+³       ³   ÃÄÄÄVisual C#
+³       ³   ÀÄÄÄVisual Web Developer
+³       ÀÄÄÄProjectTemplates
+³           ÃÄÄÄExtensibilidad
+³           ÃÄÄÄJavaScript
+³           ÃÄÄÄTypeScript
+³           ÃÄÄÄVisual Basic
+³           ÃÄÄÄVisual C#
+³           ÀÄÄÄVisual Web Developer
+ÀÄÄÄWindowsPowerShell
+    ÀÄÄÄScripts
+        ÀÄÄÄInstalledScriptInfos

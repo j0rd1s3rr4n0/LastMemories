@@ -85,52 +85,77 @@ import os
 import time
 import getpass
 import pandas as pd
+import subprocess
 
 def Testing():
+	# echo '' > %temp%\error788.tmp
 	# Extract Packages
 	archivo = '%TEMP%\\paquetes.tmp'
 	print('Este proceso puede tardar 2 min aprox ...')
-	os.system('cmd /c winget search > '+archivo)
+	#os.system('cmd /c winget search > '+archivo)
 	systemuser = getpass.getuser()
-	time.sleep(90)
+	runing = True
+	while runing == True:
+		result = subprocess.getoutput('tasklist | findstr "AppInstaller" || cls')
+		print(result)
+		if "AppInstaller" in result:
+			print(0)
+		else:
+			break
 	ruta = "C:\\Users\\"+str(systemuser)+"\\AppData\\Local\\Temp\\paquetes.tmp"
-	f = open(ruta,"r",encoding="utf8")
+	os.system('copy con >'+'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes.tmp | cls')
+	#f = open(ruta,"r",encoding="utf8")
+	with open(ruta) as fp:
+		line = fp.readline()
+		cnt = 1
+		while line:
+			print("{}".format(line.strip()))
+			line = fp.readline()
+			print(line)
+		cnt += 1
 	a =[]
-	for linea in f:
-		a.append(linea)
-		a = str(linea)
-		# Extract Program Name
-		a = a.split(" ")
-		a = list(pd.unique(a))
-		if '--' in a:
-			print(a.remove('--'))
-		#a.pop(0)
+	"""
+		for linea in f:
+			a.append(linea)
+			a = str(linea)
+			# Extract Program Name
+			a = a.split(" ")
+			a = list(pd.unique(a))
+			if '--' in a:
+				print(a.remove('--'))
+			#a.pop(0)
 
-		s = 0
-		new = []
-		for elements in a:
-			if len(elements) > 3:
-				if elements != '':
-					print('#')
+			s = 0
+			
+			new = []
+			for elements in a:
+				if len(elements) > 3:
+					if elements != '':
+						print('#')
 
-					print(a)
-					rdr = str(a[s])
-					new.append(rdr)
-					#new.pop(0)
-					#print('$')
-					print(len(new))
-					newstringName = 'dia'.join(map(str,new[0:]))
-					newstringPackage = 'dia'.join(map(str,new[(len(new)-3):(len(new)-2)]))
-					newstringVersion = 'dia'.join(map(str,new[(len(new)-2):len(new)-1]))
-					#print(newstringName,'//',newstringPackage,'//',newstringVersion)
-					# Installing
-					if newstringName == " ":
-						installstring = ('cmd /c winget install "%s"' % newstringName)
-						#	#os.system(installstring)
-						print(installstring)
+						print(a)
+						rdr = str(a[s])
+						new.append(rdr)
+						#new.pop(0)
+						#print('$')
+						print(len(new))"""
+"""
+						newstringName = ''.join(map(str,new[0:]))
+						newstringPackage = ''.join(map(str,new[(len(new)-3):(len(new)-2)]))
+						newstringVersion = ''.join(map(str,new[(len(new)-2):len(new)-1]))
+						#print(newstringName,'//',newstringPackage,'//',newstringVersion)
+						# Installing
+						if newstringName == " ":
+							installstring = ('cmd /c winget install "%s"' % newstringName)
+							#	#os.system(installstring)
+							print(installstring)
 					s+=1
-					
-	f.close()
+						
+						print(a)
+		finished = False
+
+		f.close()
+						"""
 def main():
 	Testing()
 
