@@ -90,21 +90,25 @@ import subprocess
 def Testing():
 	# echo '' > %temp%\error788.tmp
 	# Extract Packages
-	archivo = '%TEMP%\\paquetes.tmp'
-	print('Este proceso puede tardar 2 min aprox ...')
-	#os.system('cmd /c winget search > '+archivo)
 	systemuser = getpass.getuser()
+	archivo = 'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes_python.tmp'
+	print('Este proceso puede tardar 2 min aprox ...')
+	os.system('winget search > '+archivo)
+	time.sleep(10)
+	print('run')
 	runing = True
+	print('run')
 	while runing == True:
 		result = subprocess.getoutput('tasklist | findstr "AppInstaller" || cls')
 		print(result)
 		if "AppInstaller" in result:
-			print(0)
+			print(1)
 		else:
 			break
-	ruta = "C:\\Users\\"+str(systemuser)+"\\AppData\\Local\\Temp\\paquetes.tmp"
-	os.system('copy con >'+'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes.tmp | cls')
+	ruta = "C:\\Users\\"+str(systemuser)+"\\AppData\\Local\\Temp\\paquetes_python.tmp"
+	os.system('copy con >'+'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes_python.tmp && cls')
 	#f = open(ruta,"r",encoding="utf8")
+	print(ruta)
 	with open(ruta) as fp:
 		line = fp.readline()
 		cnt = 1
@@ -112,7 +116,8 @@ def Testing():
 			print("{}".format(line.strip()))
 			line = fp.readline()
 			print(line)
-		cnt += 1
+			cnt += 1
+	fp.close()
 	a =[]
 	"""
 		for linea in f:
