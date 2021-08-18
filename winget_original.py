@@ -88,79 +88,75 @@ import pandas as pd
 import subprocess
 
 def Testing():
-	# echo '' > %temp%\error788.tmp
+	# echo '' > %temp%\error788.txt
 	# Extract Packages
 	systemuser = getpass.getuser()
-	archivo = 'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes_python.tmp'
+	archivo = 'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes_python.txt'
+	try:
+		os.remove(archivo)
+	except:
+		os.system('fsutil file createnew '+'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes_python.txt 0')
+	os.system('fsutil file createnew '+'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes_python.txt 0')
 	print('Este proceso puede tardar 2 min aprox ...')
 	os.system('winget search > '+archivo)
-	time.sleep(10)
+	time.sleep(0)
 	print('run')
 	runing = True
 	print('run')
+	fake_line = ''
 	while runing == True:
 		result = subprocess.getoutput('tasklist | findstr "AppInstaller" || cls')
 		print(result)
 		if "AppInstaller" in result:
-			print(1)
+			print('1')
 		else:
-			break
-	ruta = "C:\\Users\\"+str(systemuser)+"\\AppData\\Local\\Temp\\paquetes_python.tmp"
-	os.system('copy con >'+'C:\\Users\\'+str(systemuser)+'\\AppData\\Local\\Temp\\paquetes_python.tmp && cls')
-	#f = open(ruta,"r",encoding="utf8")
-	print(ruta)
-	with open(ruta) as fp:
-		line = fp.readline()
-		cnt = 1
-		while line:
-			print("{}".format(line.strip()))
-			line = fp.readline()
-			print(line)
-			cnt += 1
-	fp.close()
-	a =[]
-	"""
-		for linea in f:
-			a.append(linea)
-			a = str(linea)
-			# Extract Program Name
-			a = a.split(" ")
-			a = list(pd.unique(a))
-			if '--' in a:
-				print(a.remove('--'))
-			#a.pop(0)
-
-			s = 0
-			
-			new = []
-			for elements in a:
-				if len(elements) > 3:
-					if elements != '':
-						print('#')
-
-						print(a)
-						rdr = str(a[s])
-						new.append(rdr)
-						#new.pop(0)
-						#print('$')
-						print(len(new))"""
-"""
+			ruta = "C:\\Users\\"+str(systemuser)+"\\AppData\\Local\\Temp\\paquetes_python.txt"
+			#f = open(ruta,"r",encoding="utf8")
+			print(ruta)
+			with open(ruta,encoding="utf8") as fp:
+				line = fp.readline()
+				if fake_line != line:
+					cnt = 1
+					while line:
+						print("{}".format(line.strip()))
+						fake_line = line
+						a = line
+						line = fp.readline()
+						a = fp.readline()
+						# Extract Program Name
+						a = a.split(" ")
+						a = list(pd.unique(a))
+						if '--' in a:
+							a.remove('--')
+						#a.pop(0)
+						s = 0						
+						new = []
+						for elements in a:
+							if len(elements) > 3:
+								if elements != '':
+									#print('#')
+									#print(a)
+									rdr = str(a[s])
+									new.append(rdr)
+									#new.pop(0)
+									#print('$')
+									#print(len(new))
 						newstringName = ''.join(map(str,new[0:]))
 						newstringPackage = ''.join(map(str,new[(len(new)-3):(len(new)-2)]))
 						newstringVersion = ''.join(map(str,new[(len(new)-2):len(new)-1]))
 						#print(newstringName,'//',newstringPackage,'//',newstringVersion)
 						# Installing
-						if newstringName == " ":
+						if newstringName != '':
 							installstring = ('cmd /c winget install "%s"' % newstringName)
 							#	#os.system(installstring)
 							print(installstring)
-					s+=1
+						s+=1
+					cnt+=1
 						
-						print(a)
-		finished = False
 
-		f.close()
-						"""
+			fp.close()
+		runing = False
+	a =[]
 def main():
 	Testing()
 
