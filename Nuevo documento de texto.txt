@@ -1,12 +1,0 @@
-El archivo C:\Users\Admin\AppData\Local\Temp\paquetes_python.txt est� creado
-Este proceso puede tardar 2 min aprox ...
-El proceso no tiene acceso al archivo porque est� siendo utilizado por otro proceso.
-run
-run
-
-C:\Users\Admin\AppData\Local\Temp\paquetes_python.txt
-['CPod', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'z-------------.cpod', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '1.28.0']
-CPod
-cmd /c winget install "cmdcmdcmd" <----- ESTA LINEA
-1.28.0
-[Finished in 3.3s]
